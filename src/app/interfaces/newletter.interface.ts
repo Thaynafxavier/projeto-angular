@@ -1,3 +1,3 @@
 interface NewsletterResponse {
-    message:string
+    message: string
 }
