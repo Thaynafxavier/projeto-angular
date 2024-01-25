@@ -26,11 +26,7 @@ export class NewsletterFormComponent {
     });
   }
 
-  onSubmit(){
-    if(this.newsletterForm.value){
-      this.service.sendData(this.newsletterForm.value.name, this.newsletterForm.value.email).subscribe({
-        
-      })
-    }
-  }
+ 
+
+  
 }

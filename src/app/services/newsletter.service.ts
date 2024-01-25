@@ -8,11 +8,4 @@ import { Observable } from 'rxjs';
 export class NewsletterService {
   private endpoinUrl = 'https://faed47pcwb7biktidlecuafuty0aegep.lambda-url.us-east-1.on.aws/';
 
-  constructor(private http: HttpClient) { }
-
-  sendData(name: string, email: string): Observable<NewsletterResponse>{
-    const data = {name, email};
-
-    return this.http.post<NewsletterResponse>(this.endpoinUrl, data);
   }
-}
